@@ -66,6 +66,4 @@ app.post('/classify-plant', upload.single('image'), (req, res) => {
     apiReq.end();
 });
 
-app.listen(PORT, () => {
-    console.log('✅ السيرفر شغال: http://localhost:' + PORT);
-});
+module.exports = app;

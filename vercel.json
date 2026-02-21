@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/classify-plant", "destination": "/api/server.js" },
+    { "source": "/(.*)", "destination": "/$1" }
+  ]
+}
