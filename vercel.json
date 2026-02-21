@@ -1,13 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "pro2/server.js", "use": "@vercel/node" },
-    { "src": "pro2/*.html", "use": "@vercel/static" },
-    { "src": "pro2/*.js", "use": "@vercel/static" },
-    { "src": "pro2/*.css", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/classify-plant", "dest": "pro2/server.js" },
-    { "src": "/(.*)", "dest": "pro2/$1" }
+  "rewrites": [
+   { "source": "/api/classify-plant", "destination": "/api/server.js" }
   ]
 }
