@@ -118,7 +118,7 @@ function getTreatmentSuggestion(label) {
 async function classifyPlant(file) {
   const formData = new FormData();
   formData.append('image', file);
-  const response = await fetch('/classify-plant', { method: 'POST', body: formData });
+ const response = await fetch('/classify-plant', { method: 'POST', body: formData });
   if (!response.ok) {
     const errorData = await response.json().catch(() => ({}));
     throw new Error(errorData.error || `خطأ HTTP: ${response.status}`);
