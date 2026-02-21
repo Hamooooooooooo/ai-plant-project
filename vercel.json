@@ -1,5 +1,5 @@
 {
   "rewrites": [
-   { "source": "/classify-plant", "destination": "/api/server.js" }
+    { "source": "/classify-plant", "destination": "/pro2/api/server.js" }
   ]
 }
